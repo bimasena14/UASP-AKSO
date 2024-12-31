@@ -10,6 +10,8 @@ GENERAL SETUP STEP
 4.Stop dan Hapus Container
     - docker-compose down
     - docker-compose stop
+
+
 AKSES NGINX CONTAINER
 http://localhost:8080 (di browser anda)
 AKSES MYSQL

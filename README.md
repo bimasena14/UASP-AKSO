@@ -11,6 +11,6 @@ GENERAL SETUP STEP
     - docker-compose down
     - docker-compose stop
 AKSES NGINX CONTAINER
-https://localhost:8080 (di browser anda)
+http://localhost:8080 (di browser anda)
 AKSES MYSQL
-https://localhost:8002(di browser amda)
+http://localhost:8002 (di browser amda)

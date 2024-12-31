@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT UAS AKSO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* Ganti background-color dengan background-image */
+            background-image: url("./images/Free Vector _ Futuristic technological wallpaper.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .active {
+            display: block;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+        }
+        p {
+            font-size: 18px;
+            color: #34495e;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide1">
+        <h1>UASP ARSITEKTUR KOMPUTER DAN SISTEM OPERASI</h1>
+        <p>Kelompok:
+          BIMA SENA (24031554214)
+          FAWAZUL'AMMAR (24031554136)
+        </p>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2">
+        <h1>Deskripsi Mata Kuliah</h1>
+        <p>Arsitektur Komputer dan Sistem Operasi adalah ilmu komputer yang berfokus pada desain, struktur, dan interaksi antara komponen-komponen komputer. Ini mencakup pemahaman tentang CPU, memori, sistem bus, dan perangkat I/O. Tujuannya adalah untuk memahami cara kerja komputer pada tingkat dasar, bagaimana komponen berinteraksi untuk menjalankan program, serta teknik untuk meningkatkan kinerja seperti penggunaan pipeline dan arsitektur multi-core. Mata pelajaran ini juga mencakup interaksi antara perangkat keras dan perangkat lunak, serta perkembangan terbaru seperti virtualisasi dan cloud computing.</p>
+        <p>Mata Kuliah: Arsitektur Komputer dan Sistem Operasi (AKSO)</p>
+        <p>Semangat mengerjakan UAS AKSO!</p>
+        <button onclick="prevSlide()">Previous</button>
+    </div>
+
+    <script>
+        function nextSlide() {
+            document.getElementById('slide1').classList.remove('active');
+            document.getElementById('slide2').classList.add('active');
+        }
+
+        function prevSlide() {
+            document.getElementById('slide2').classList.remove('active');
+            document.getElementById('slide1').classList.add('active');
+        }
+    </script>
+</body>
+</html>
